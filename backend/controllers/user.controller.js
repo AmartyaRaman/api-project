@@ -7,6 +7,7 @@ import logger from '../config/logger.js';
 export const getAllUsersAndTasks = async (req, res, next) => {
   try {
     const results = await db.query.users.findMany({
+      where: (users, { ne }) => ne(users.role, 'admin'),
       with: {
         tasks: true,
       },
