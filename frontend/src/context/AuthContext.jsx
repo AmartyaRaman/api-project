@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 
 const AuthContext = createContext();
 
-const API_URL = 'http://localhost:8000/api/v1';
+const API_URL = '/api/v1';
 
 // Configure axios defaults
 axios.defaults.baseURL = API_URL;

@@ -4,7 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "build": "npm install && cd ../frontend && npm install && npm run build"
   },
   "author": "Amartya",
   "license": "ISC",

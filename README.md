@@ -1,39 +1,26 @@
 # Task Box - Full Stack Task Management
+---
 
+## ⚡ Quick Start (Unified Mode)
 
-## 🚀 Getting Started (Full Setup)
+Since the backend now serves the frontend, you only need one terminal!
 
-### 1. Backend Setup
-1. **Prerequisites**: Ensure you have Node.js (v18+) and a PostgreSQL database through neon serverless postgres [https://neon.com].
-2. **Environment**: Create a `.env` file in the `backend/` directory:
-   ```env
-   PORT=8000
-   DATABASE_URL=your_postgres_connection_string
-   JWT_SECRET=your_super_secret_key
-   ```
-3. **Installation & Sync**:
-   ```bash
-   cd backend
-   npm install
-   npx drizzle-kit push   # Syncs the schema with your DB
-   ```
-4. **Run**:
-   ```bash
-   npm run dev
-   ```
-   *Backend will run at `http://localhost:8000/api/v1`*
+### 1. Initial Setup
+```bash
+# Install everything
+cd backend && npm install
+cd ../frontend && npm install
 
-### 2. Frontend Setup
-1. **Installation**:
-   ```bash
-   cd frontend
-   npm install
-   ```
-2. **Run**:
-   ```bash
-   npm run dev
-   ```
-   *Frontend will run at `http://localhost:5173`*
+# Build the frontend once
+npm run build
+```
+
+### 2. Run the App
+```bash
+cd backend
+npm run dev
+```
+Visit **`http://localhost:8000`**. The UI and API are both powered by this single command!
 
 ---
 
