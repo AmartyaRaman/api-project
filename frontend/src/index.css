@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+@layer components {
+  .btn-3d {
+    @apply relative px-6 py-2 bg-black text-white border-2 border-black 
+           shadow-[4px_4px_0px_0px_rgba(229,231,235,1)] 
+           hover:shadow-[2px_2px_0px_0px_rgba(229,231,235,1)] 
+           hover:translate-x-[2px] hover:translate-y-[2px]
+           active:shadow-none active:translate-x-[4px] active:translate-y-[4px]
+           transition-all duration-75 font-bold uppercase;
+  }
+
+  .btn-3d-white {
+    @apply relative px-6 py-2 bg-white text-black border-2 border-black 
+           shadow-[4px_4px_0px_0px_rgba(229,231,235,1)] 
+           hover:shadow-[2px_2px_0px_0px_rgba(229,231,235,1)] 
+           hover:translate-x-[2px] hover:translate-y-[2px]
+           active:shadow-none active:translate-x-[4px] active:translate-y-[4px]
+           transition-all duration-75 font-bold uppercase;
+  }
+
+  .card-3d {
+    @apply border-2 border-black bg-white p-6 
+           shadow-[6px_6px_0px_0px_rgba(229,231,235,1)];
+  }
+
+  .input-3d {
+    @apply w-full px-4 py-2 border-2 border-black focus:outline-none 
+           focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
+           transition-all bg-white;
+  }
+}
