@@ -1,9 +1,7 @@
 # Task Box - Full Stack Task Management
----
+### Live Link -> https://api-project-6bhd.onrender.com/
 
-## ⚡ Quick Start (Unified Mode)
-
-Since the backend now serves the frontend, you only need one terminal!
+## ⚡ Quick Start (Monorepo)
 
 ### 1. Initial Setup
 ```bash
